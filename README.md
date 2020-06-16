@@ -3,7 +3,7 @@
 This repository can download images from google with specified keywords
 
 ```
-**UPDATE Catalina**
+**UPDATE CATALINA**
 
 This code was forked from a repository belonging to WuLC.
 All the description after "END Update Catalina" belongs to the original Readme.
@@ -22,8 +22,6 @@ TO DO : Change the code for `download_with_selenium.py`
 WARNING Catalina for WBM-AI : Use only `download_with_urllib` !!!
 
 ```
-
-**END UPDATE Catalina**
 
 
 
