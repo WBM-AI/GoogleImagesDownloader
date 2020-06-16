@@ -2,7 +2,7 @@
 
 This repository can download images from google with specified keywords
 
-**WARNING Catalina for WBM-AI : Use only `download_with_urllib` !!! **
+**WARNING Catalina for WBM-AI : Use only download_with_urllib !!!**
 
 
 
