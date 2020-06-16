@@ -134,9 +134,11 @@ def download_images(main_keyword, supplemented_keywords, download_dir):
 
 
 if __name__ == '__main__':
+    # Added by Catalina CHIRCU on 16/06/2020
     main_keywords = MAIN_KEYWORDS
     supplemented_keywords = SUP_KEYWORDS
     chrome_driver = "/usr/local/bin/chromedriver"
+    # END Add
 
     # test for chinese
     # main_keywords = ['高兴', '悲伤', '惊讶']
