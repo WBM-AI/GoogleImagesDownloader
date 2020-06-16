@@ -3,7 +3,7 @@
 This repository can download images from google with specified keywords
 
 ```
-**UPDATE CATALINA**
+UPDATE CATALINA
 
 This code was forked from a repository belonging to WuLC.
 All the description after "END Update Catalina" belongs to the original Readme.
