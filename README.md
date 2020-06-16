@@ -2,7 +2,28 @@
 
 This repository can download images from google with specified keywords
 
-**WARNING Catalina for WBM-AI : Use only `download_with_urllib` !!!**
+**UPDATE Catalina**
+
+This code was forked from a repository belonging to WuLC.
+All the description after "END Update Catalina" belongs to the original Readme.
+
+I made the following changes to the original code : 
+
+1. I added the file `constants.py`, in which I set some constants
+2. I modified the file `download_with_urllib.py` :
+  - imported `constants.py`
+  - modified the DOM information for the links
+  - replaced keywords with constants from `constants.py`
+  - wrote comments which mention all the above
+  
+TO DO : Change the code for `download_with_selenium.py`
+
+WARNING Catalina for WBM-AI : Use only `download_with_urllib` !!!
+
+**END UPDATE Catalina**
+
+
+
 
 
 
