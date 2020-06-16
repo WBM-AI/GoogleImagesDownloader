@@ -24,7 +24,7 @@ from urllib.parse import quote
 
 from multiprocessing import Pool
 from user_agent import generate_user_agent
-
+from constants import *
 
 log_file = 'download.log'
 logging.basicConfig(level=logging.DEBUG, filename=log_file, filemode="a+", format="%(asctime)-15s %(levelname)-8s  %(message)s")
@@ -63,7 +63,8 @@ def parse_page(url):
     """
     page_content = download_page(url)
     if page_content:
-        link_list = re.findall('"ou":"(.*?)"', page_content)
+        #link_list = re.findall('"ou":"(.*?)"', page_content)
+        link_list = re.findall('src="(.*?)"', page_content)
         if len(link_list) == 0:
             print('get 0 links from page {0}'.format(url))
             logging.info('get 0 links from page {0}'.format(url))
@@ -129,32 +130,9 @@ def download_images(main_keyword, supplemented_keywords, download_dir):
 
 
 if __name__ == '__main__':
-    main_keywords = ['neutral', 'angry', 'surprise', 'disgust', 'fear', 'happy', 'sad']
-
-    supplemented_keywords = ['facial expression',\
-                'human face',\
-                'face',\
-                'old face',\
-                'young face',\
-                'adult face',\
-                'child face',\
-                'woman face',\
-                'man face',\
-                'male face',\
-                'female face',\
-                'gentleman face',\
-                'lady face',\
-                'boy face',\
-                'girl face',\
-                'American face',\
-                'Chinese face',\
-                'Korean face',\
-                'Japanese face',\
-                'actor face',\
-                'actress face'\
-                'doctor face',\
-                'movie face'
-                ]
+    main_keywords = MAIN_KEYWORDS
+    supplemented_keywords = SUP_KEYWORDS
+    chrome_driver = "/usr/local/bin/chromedriver"
 
     # test for chinese
     # main_keywords = ['高兴', '悲伤', '惊讶']
