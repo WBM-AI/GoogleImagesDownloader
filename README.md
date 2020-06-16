@@ -12,8 +12,8 @@ I made the following changes to the original code :
 1. I added the file `constants.py`, in which I set some constants.
 2. I modified the file `download_with_urllib.py` :
   - imported the file `constants.py`
-  - modified the DOM information for the links
-  - replaced keywords with constants from `constants.py`
+  - modified the DOM information for the links (function `parse_page`).
+  - replaced keywords with constants from `constants.py` (in `main`)
   - wrote comments which mention all the above
   
 TO DO : Change the code for `download_with_selenium.py`.
