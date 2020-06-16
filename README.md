@@ -24,6 +24,9 @@ Two different methods are provided
 - `download_with_urllib`
 - `download_with_selenium`
 
+**WARNING Catalina for WBM-AI :** 
+
+Use only `download_with_urllib` !!!
 
 `download_with_urllib` is to download with just package `urllib`, but due to the limit by google, each searching query can download at most 100 images
 
