@@ -1,6 +1,7 @@
 MAIN_KEYWORDS = ['school', 'scoala']
 SUP_KEYWORDS = ['école']
 MAX_NUM_IMAGES = 1000
+EXTENSION = 'com'
 
 '''
 MAIN_KEYWORDS = ['neutral', 'angry', 'surprise', 'disgust', 'fear', 'happy', 'sad']
