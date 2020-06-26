@@ -42,7 +42,7 @@ def download_page(url):
     try:
         headers = {}
         headers['User-Agent'] = generate_user_agent()
-        headers['Referer'] = 'https://www.google.com'
+        headers['Referer'] = 'https://www.google.'+EXTENSION
         req = urllib.request.Request(url, headers = headers)
         resp = urllib.request.urlopen(req)
         return str(resp.read())
@@ -100,8 +100,8 @@ def download_images(main_keyword, supplemented_keywords, download_dir):
     for j in range(len(supplemented_keywords)):
         print('Process {0} supplemented keyword: {1}'.format(os.getpid(), supplemented_keywords[j]))
         search_query = quote(main_keyword + ' ' + supplemented_keywords[j])
-        # url = 'https://www.google.com/search?q=' + search_query + '&espv=2&biw=1366&bih=667&site=webhp&source=lnms&tbm=isch&sa=X&ei=XosDVaCXD8TasATItgE&ved=0CAcQ_AUoAg'
-        url = 'https://www.google.com/search?q=' + search_query + '&source=lnms&tbm=isch'
+        # url = 'https://www.google.'+EXTENSION+'/search?q=' + search_query + '&espv=2&biw=1366&bih=667&site=webhp&source=lnms&tbm=isch&sa=X&ei=XosDVaCXD8TasATItgE&ved=0CAcQ_AUoAg'
+        url = 'https://www.google.'+EXTENSION+'/search?q=' + search_query + '&source=lnms&tbm=isch'
         image_links = image_links.union(parse_page(url))
         print('Process {0} get {1} links so far'.format(os.getpid(), len(image_links)))
         time.sleep(2)
